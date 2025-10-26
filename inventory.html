@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inventory Rollbacks — Infernorifts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Infernorifts — Inventory Rollbacks</h1>
+  <p class="subtitle">Axir command reference</p>
+  <nav class="top-nav"><a href="index.html">← Home</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="inventory-rollbacks" class="card">
+      <h2>Inventory Rollbacks</h2>
+      <p class="lead">Commands to check and create backups with Axir. Click the Copy button to copy a command to your clipboard.</p>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Filter commands (by text)" aria-label="Filter commands">
+      </div>
+
+      <ul class="commands" id="commands-list">
+        <li class="command" data-syn="/axir &lt;player&gt;">
+          <div class="cmd-header">
+            <code class="syntax">/axir &lt;player&gt;</code>
+            <button class="btn copy" data-cmd="/axir &lt;player&gt;">Copy</button>
+          </div>
+          <p class="desc">Check backups for a player. Shows available backups and metadata (time, size, etc.).</p>
+        </li>
+
+        <li class="command" data-syn="/axir save *">
+          <div class="cmd-header">
+            <code class="syntax">/axir save *</code>
+            <button class="btn copy" data-cmd="/axir save *">Copy</button>
+          </div>
+          <p class="desc">Create a manual backup for all players.</p>
+        </li>
+
+        <li class="command" data-syn="/axir save &lt;player&gt;">
+          <div class="cmd-header">
+            <code class="syntax">/axir save &lt;player&gt;</code>
+            <button class="btn copy" data-cmd="/axir save &lt;player&gt;">Copy</button>
+          </div>
+          <p class="desc">Create a manual backup for the specified player.</p>
+        </li>
+      </ul>
+
+      <div class="examples">
+        <h3>Examples</h3>
+        <pre class="example-block">/axir save FallenPlayer
+/axir FallenPlayer</pre>
+      </div>
+
+      <div class="notes">
+        <h3>Notes</h3>
+        <ul>
+          <li>Make sure you have the required mod permissions before running these commands.</li>
+          <li>When using <code>/axir &lt;player&gt;</code>, you may get a list of available backups — use the backup ID with the rollback command (if applicable).</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Infernorifts — Inventory Rollbacks</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+/* Simple wiki-style styling */
+:root{
+  --bg:#0f1720;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --panel:#08101a;
+  --text:#e6eef6;
+  --radius:10px;
+  font-size:16px;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; margin:0; background:linear-gradient(180deg,#051020 0%, #071826 100%); color:var(--text); -webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:24px}
+.site-header{background:linear-gradient(90deg, rgba(110,231,183,0.06), transparent);border-bottom:1px solid rgba(255,255,255,0.03)}
+.site-header .wrap{display:flex;flex-direction:column;gap:4px}
+.site-header h1{margin:12px 0 0;font-size:1.4rem}
+.subtitle{margin:0;color:var(--muted)}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px;border-radius:var(--radius); margin-top:20px; border:1px solid rgba(255,255,255,0.03)}
+.lead{color:var(--muted)}
+.controls{display:flex;gap:12px;align-items:center;margin:12px 0}
+input[type="search"]{flex:1;padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:var(--panel);color:var(--text)}
+.commands{list-style:none;padding:0;margin:6px 0}
+.command{padding:12px;border-radius:8px;background:rgba(255,255,255,0.01);display:flex;flex-direction:column;gap:8px;border:1px solid rgba(255,255,255,0.02);margin-bottom:10px}
+.cmd-header{display:flex;align-items:center;gap:12px;justify-content:space-between}
+.syntax{background:rgba(255,255,255,0.02);padding:6px 8px;border-radius:6px;font-family:monospace}
+.btn{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--text);padding:6px 10px;border-radius:6px;cursor:pointer}
+.btn.copy{background:linear-gradient(90deg, rgba(110,231,183,0.08), transparent)}
+.desc{margin:0;color:var(--muted)}
+.examples{margin-top:10px}
+.example-block{background:#021219;padding:10px;border-radius:6px;color:var(--muted);overflow:auto}
+.site-footer{padding:18px 0;margin-top:26px;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
+/* Moved inline styles from HTML */
+.top-nav{margin-top:8px}
+.card .notes{margin-top:12px}
+@media (max-width:640px){.wrap{padding:14px}.site-header .wrap{padding-bottom:8px}.cmd-header{flex-direction:column;align-items:flex-start;gap:8px}}

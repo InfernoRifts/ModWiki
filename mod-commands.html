@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mod Commands — Infernorifts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <h1>Infernorifts — Mod Commands</h1>
+            <p class="subtitle">Common moderation commands</p>
+            <nav class="top-nav"><a href="index.html">← Home</a></nav>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <section id="mod-commands" class="card">
+            <h2>General Mod Commands</h2>
+            <p class="lead">Common moderation commands and short descriptions. Use the Copy button to copy a command.
+            </p>
+
+            <div class="controls">
+                <input id="search" type="search" placeholder="Filter commands (by text)" aria-label="Filter commands">
+            </div>
+
+            <ul class="commands" id="commands-list">
+                <li class="command" data-syn="/vanish">
+                    <div class="cmd-header">
+                        <code class="syntax">/vanish</code>
+                        <button class="btn copy" data-cmd="/vanish">Copy</button>
+                    </div>
+                    <p class="desc">Vanish from player sight. Useful for observing without being noticed.</p>
+                </li>
+
+                <li class="command" data-syn="/gmsp">
+                    <div class="cmd-header">
+                        <code class="syntax">/gmsp</code>
+                        <button class="btn copy" data-cmd="/gmsp">Copy</button>
+                    </div>
+                    <p class="desc">Put yourself in spectator mode.</p>
+                </li>
+
+                <li class="command" data-syn="/tp &lt;player&gt;">
+                    <div class="cmd-header">
+                        <code class="syntax">/tp &lt;player&gt;</code>
+                        <button class="btn copy" data-cmd="/tp &lt;player&gt;">Copy</button>
+                    </div>
+                    <p class="desc">Teleport directly to a player.</p>
+                </li>
+                <li class="command" data-syn="/tp here &lt;player&gt;">
+                    <div class="cmd-header">
+                        <code class="syntax">/tp here &lt;player&gt;</code>
+                        <button class="btn copy" data-cmd="/tp here &lt;player&gt;">Copy</button>
+                    </div>
+                    <p class="desc">Teleport a player to your location — useful for checking AFK clicking or quick
+                        inspections.</p>
+                </li>
+                <li class="command" data-syn="/invsee &lt;player&gt;">
+                    <div class="cmd-header">
+                        <code class="syntax">/invsee &lt;player&gt;</code>
+                        <button class="btn copy" data-cmd="/invsee &lt;player&gt;">Copy</button>
+                    </div>
+                    <p class="desc">View a player's inventory or give replacement items if needed.</p>
+                </li>
+                <li class="command" data-syn="/ban &lt;player&gt;">
+                    <div class="cmd-header">
+                        <code class="syntax">/ban &lt;player&gt;</code>
+                        <button class="btn copy" data-cmd="/ban &lt;player&gt;">Copy</button>
+                    </div>
+                    <p class="desc">Ban a player from the server. Confirm the username and reason before executing.</p>
+                </li>
+                <li class="command" data-syn="/mute &lt;player&gt; &lt;time&gt;">
+                    <div class="cmd-header">
+                        <code class="syntax">/mute &lt;player&gt; &lt;time&gt;</code>
+                        <button class="btn copy" data-cmd="/mute &lt;player&gt; &lt;time&gt;">Copy</button>
+                    </div>
+                    <p class="desc">Mute a player. Time format: m (minutes), h (hours), d (days), w (weeks), mo
+                        (months), y (years). Example: <code>/mute Player123 30m</code>.</p>
+                </li>
+                <li class="command" data-syn="/jail &lt;player&gt; &lt;cell&gt; &lt;time&gt;">
+                    <div class="cmd-header">
+                        <code class="syntax">/jail &lt;player&gt; &lt;cell number&gt; &lt;time&gt;</code>
+                        <button class="btn copy"
+                            data-cmd="/jail &lt;player&gt; &lt;cell number&gt; &lt;time&gt;">Copy</button>
+                    </div>
+                    <p class="desc">Jail a player in a specific cell for a duration. Time format as in
+                        <code>/mute</code>. Example: <code>/jail Griefer42 2 1h</code>.</p>
+                </li>
+            </ul>
+
+            <div class="notes">
+                <h3>Notes & best practices</h3>
+                <ul>
+                    <li>Double-check player names and durations before running punitive commands.</li>
+                    <li>Record actions in mod logs and, when applicable, notify senior staff.</li>
+                    <li>Time formats accept suffixes: <code>m, h, d, w, mo, y</code> (minutes, hours, days, weeks,
+                        months, years).</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer class="site-footer">
+        <div class="wrap">Infernorifts — Mod Commands</div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
