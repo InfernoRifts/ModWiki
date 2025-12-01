@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Support Tickets — Infernorifts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Infernorifts — Support Tickets</h1>
+      <p class="subtitle">InfernoRifts Support Bot tutorial for mods</p>
+      <nav class="top-nav"><a href="index.html">← Home</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>InfernoRifts Support Bot — Quick Guide for Mods</h2>
+      <p class="lead">A concise walkthrough for using the Support Bot and handling support tickets on the server. Only staff with the Support role should use the mod features.</p>
+
+      <h3>1. How Tickets Get Created</h3>
+      <ol>
+        <li>Users go to the <code>#support-ticket</code> channel and click the "Open Ticket" button on the embed.</li>
+        <li>This creates a private ticket channel in the "Unclaimed Tickets" category.</li>
+        <li>The bot mentions the user with a welcome message and staff-facing buttons.</li>
+      </ol>
+
+      <h3>2. Staff Actions in Tickets</h3>
+      <p>You can use the buttons on the bot's welcome message or the slash commands <code>/claim</code>, <code>/close</code>, and <code>/escalate</code>. All actions should be performed inside ticket channels.</p>
+
+      <h4>Claim the Ticket</h4>
+      <p>Click the "Claim" button or type <code>/claim</code>. This renames the channel to <code>claimed-&lt;yourname&gt;</code> so others know you're handling it.</p>
+
+      <h4>Escalate the Ticket</h4>
+      <p>Click "Escalate" or type <code>/escalate</code>. Choose a level (Developer, Moderator, Owner/Manager) from the dropdown, then enter a reason in the modal. The bot will rename the channel and move it to the correct category (for example, <code>dev-tickets</code>).</p>
+
+      <h4>Close the Ticket</h4>
+      <p>Click "Close" or type <code>/close</code>. You can choose:</p>
++      <ul>
+        <li><strong>Transcript</strong> — Generates .txt and .html logs, sends them to <code>#ticket-logs</code>, and gives you a copy. The ticket stays open so you can review it further.</li>
+        <li><strong>Delete</strong> — Deletes the channel after 5 seconds (use this after saving a transcript if you want the physical channel removed).</li>
+        <li><strong>Cancel</strong> — Keeps the ticket open.</li>
+      </ul>
+
+      <h3>Tips</h3>
+      <ul>
+        <li>Tickets are private: only the ticket creator and staff can see the contents.</li>
++        <li>Test and practice in a dedicated ticket channel — slash commands appear there for staff only.</li>
++        <li>If something breaks, ping DemonDev (or the bot owner) with the error details so it can be investigated.</li>
++      </ul>
+
+      <div class="notes">
+        <h3>That's it!</h3>
+        <p>Keep tickets organized and act quickly.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Infernorifts — Support Tickets</div>
+  </footer>
+</body>
+</html>
+
